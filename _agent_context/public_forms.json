@@ -2,21 +2,47 @@
   "version": 1,
   "forms": [
     {
-      "entity": "mitarbeiterverwaltung",
-      "app_id": "6a0dac22f03ba44fb0d7225d",
-      "path": "/rest/apps/6a0dac22f03ba44fb0d7225d/records",
+      "entity": "rechnungsverwaltung",
+      "app_id": "6a0dac21e8e2bc04096bb6fd",
+      "path": "/rest/apps/6a0dac21e8e2bc04096bb6fd/records",
       "allowed_fields": [
-        "nachname",
-        "position",
-        "email",
-        "telefon",
-        "eintrittsdatum",
-        "notizen_ma",
-        "vorname"
+        "rechnungsnummer",
+        "rechnungsdatum",
+        "faelligkeitsdatum",
+        "nettobetrag",
+        "mehrwertsteuersatz",
+        "gesamtbetrag",
+        "zahlungsart",
+        "zahlungsstatus",
+        "rechnungsnotiz"
       ],
       "pow": true,
       "pow_difficulty": 50000,
-      "title": "Mitarbeiterverwaltung — Formular"
+      "title": "Rechnungsverwaltung — Formular"
+    },
+    {
+      "entity": "auftragsverwaltung",
+      "app_id": "6a0dac22a4fd7adf1e0b08c7",
+      "path": "/rest/apps/6a0dac22a4fd7adf1e0b08c7/records",
+      "allowed_fields": [
+        "auftragsnummer",
+        "auftragsdatum",
+        "status",
+        "druckbreite_cm",
+        "druckhoehe_cm",
+        "materialien",
+        "wunschtermin",
+        "lieferart",
+        "liefer_strasse",
+        "liefer_hausnummer",
+        "liefer_plz",
+        "liefer_ort",
+        "sonderanforderungen",
+        "interne_notizen"
+      ],
+      "pow": true,
+      "pow_difficulty": 50000,
+      "title": "Auftragsverwaltung — Formular"
     },
     {
       "entity": "kundenverwaltung",
@@ -38,6 +64,23 @@
       "pow": true,
       "pow_difficulty": 50000,
       "title": "Kundenverwaltung — Formular"
+    },
+    {
+      "entity": "mitarbeiterverwaltung",
+      "app_id": "6a0dac22f03ba44fb0d7225d",
+      "path": "/rest/apps/6a0dac22f03ba44fb0d7225d/records",
+      "allowed_fields": [
+        "nachname",
+        "position",
+        "email",
+        "telefon",
+        "eintrittsdatum",
+        "notizen_ma",
+        "vorname"
+      ],
+      "pow": true,
+      "pow_difficulty": 50000,
+      "title": "Mitarbeiterverwaltung — Formular"
     },
     {
       "entity": "motivkatalog",
@@ -73,49 +116,6 @@
       "pow": true,
       "pow_difficulty": 50000,
       "title": "Materialverwaltung — Formular"
-    },
-    {
-      "entity": "auftragsverwaltung",
-      "app_id": "6a0dac22a4fd7adf1e0b08c7",
-      "path": "/rest/apps/6a0dac22a4fd7adf1e0b08c7/records",
-      "allowed_fields": [
-        "auftragsnummer",
-        "auftragsdatum",
-        "status",
-        "druckbreite_cm",
-        "druckhoehe_cm",
-        "materialien",
-        "wunschtermin",
-        "lieferart",
-        "liefer_strasse",
-        "liefer_hausnummer",
-        "liefer_plz",
-        "liefer_ort",
-        "sonderanforderungen",
-        "interne_notizen"
-      ],
-      "pow": true,
-      "pow_difficulty": 50000,
-      "title": "Auftragsverwaltung — Formular"
-    },
-    {
-      "entity": "rechnungsverwaltung",
-      "app_id": "6a0dac21e8e2bc04096bb6fd",
-      "path": "/rest/apps/6a0dac21e8e2bc04096bb6fd/records",
-      "allowed_fields": [
-        "rechnungsnummer",
-        "rechnungsdatum",
-        "faelligkeitsdatum",
-        "nettobetrag",
-        "mehrwertsteuersatz",
-        "gesamtbetrag",
-        "zahlungsart",
-        "zahlungsstatus",
-        "rechnungsnotiz"
-      ],
-      "pow": true,
-      "pow_difficulty": 50000,
-      "title": "Rechnungsverwaltung — Formular"
     }
   ]
 }
